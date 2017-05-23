@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DD4CE4BE-3E67-4CCD-AF38-6E68669F1A7F}</ProjectGuid>
+    <RootNamespace>MICO32</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\ti\CC3200SDK_1.0.0\cc3200-sdk;C:\ti\CC3200SDK_1.0.0\cc3200-sdk\inc;C:\ti\CC3200SDK_1.0.0\cc3200-sdk\simplelink\include;C:\ti\CC3200SDK_1.0.0\cc3200-sdk\driverlib;C:\ti\CC3200SDK_1.0.0\cc3200-sdk\oslib;C:\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source;C:\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\include;C:\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\portable\IAR\ARM_CM4;C:\ti\CC3200SDK_1.0.0\cc3200-sdk\middleware\driver\hal;$(ProjectDir)..;$(ProjectDir)..\MICO\include;$(ProjectDir)..\MICO\Bootloader;$(ProjectDir)..\MICO\External;$(ProjectDir)..\MICO\Library\support;$(ProjectDir)..\MICO\MICO;$(ProjectDir)..\MICO\Platform\Common\Cortex-M4;$(ProjectDir)..\MICO\Platform\include;$(ProjectDir)..\MICO\Demos\COM.MXCHIP.SPP;$(ProjectDir)..\lwip\src\include;$(ProjectDir)..\lwip\src\include\ipv4;$(ProjectDir)..\lwip\test\unit;$(ProjectDir)..\lwip\ports\tiva-tm4c129\include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\FreeRTOSConfig.h" />
+    <ClInclude Include="..\cc32xx_platform.h" />
+    <ClInclude Include="..\mico32_common.h" />
+    <ClInclude Include="..\mico32_easylink.h" />
+    <ClInclude Include="..\mico32_handler.h" />
+    <ClInclude Include="..\pinmux.h" />
+    <ClInclude Include="..\platform.h" />
+    <ClInclude Include="..\platform_common_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\croutine.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\event_groups.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\list.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\queue.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\tasks.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\timers.c" />
+    <ClCompile Include="..\lwip\src\core\def.c" />
+    <ClCompile Include="..\lwip\src\core\ipv4\ip_addr.c" />
+    <ClCompile Include="..\mico32_easylink_2.c" />
+    <ClCompile Include="..\mico32_easylink_3.c" />
+    <ClCompile Include="..\mico32_easylink_lib.c" />
+    <ClCompile Include="..\mico32_easylink_plus.c" />
+    <ClCompile Include="..\mico32_entry.c" />
+    <ClCompile Include="..\mico32_hal.c" />
+    <ClCompile Include="..\mico32_handler.c" />
+    <ClCompile Include="..\mico32_misc.c" />
+    <ClCompile Include="..\mico32_osal.c" />
+    <ClCompile Include="..\mico32_sock.c" />
+    <ClCompile Include="..\mico32_wlan.c" />
+    <ClCompile Include="..\pinmux.c" />
+    <ClCompile Include="..\platform.c" />
+    <ClCompile Include="C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\common\startup_ewarm.c" />
+    <ClCompile Include="C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\common\timer_if.c" />
+    <ClCompile Include="C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\common\uart_if.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

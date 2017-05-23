@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="application">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="external">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{8a4bb2ff-5509-4fca-8f83-d112468085a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library">
+      <UniqueIdentifier>{a4e6f8ed-1cb7-4ac6-b5eb-03c9ca84a500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mico">
+      <UniqueIdentifier>{421cfa8c-d711-4890-ae3d-2f6f9c9abf7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\micodriver">
+      <UniqueIdentifier>{5fc24cd8-d39f-4623-ae9e-45babed8d53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\curve25519">
+      <UniqueIdentifier>{f9e576e7-f067-4168-85fc-99694e1c63bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\json-c">
+      <UniqueIdentifier>{d5f28385-4375-45c1-8eb6-18092c835266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mico\easylink">
+      <UniqueIdentifier>{74e05fa4-5f87-4800-b6f3-b4dff24b219e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="support">
+      <UniqueIdentifier>{d9b3c1e3-93ad-4260-95b7-3f3cc4612889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{605fa3cc-7c81-46bd-9ffb-ef8bdc20600d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\common">
+      <UniqueIdentifier>{e9c10092-d8ad-439c-af22-1ae3694e1919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\common\cortex-m4">
+      <UniqueIdentifier>{e45dce2e-db49-4fc8-949d-fee4f7ffda7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\common\iar">
+      <UniqueIdentifier>{2bd398cd-a664-4183-8b91-6f79677b03fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\LocalTcpServer.c">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\MICOAppEntrance.c">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\MICOBonjour.c">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\MICOConfigDelegate.c">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\RemoteTcpClient.c">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\SppProtocol.c">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\UartRecv.c">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\External\Curve25519\curve25519-donna.c">
+      <Filter>external\curve25519</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\External\JSON-C\json_util.c">
+      <Filter>external\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\External\JSON-C\linkhash.c">
+      <Filter>external\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\External\JSON-C\printbuf.c">
+      <Filter>external\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\External\JSON-C\arraylist.c">
+      <Filter>external\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\External\JSON-C\debug.c">
+      <Filter>external\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\External\JSON-C\json_object.c">
+      <Filter>external\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\External\JSON-C\json_tokener.c">
+      <Filter>external\json-c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Library\MICOConfig.c">
+      <Filter>library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\MICO\MICONTPClient.c">
+      <Filter>mico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\MICO\MICOParaStorage.c">
+      <Filter>mico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\MICO\MICOSystemMonitor.c">
+      <Filter>mico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\MICO\MICOConfigMenu.c">
+      <Filter>mico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\MICO\MICOConfigServer.c">
+      <Filter>mico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\MICO\MICOEntrance.c">
+      <Filter>mico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\MICO\MICONotificationCenter.c">
+      <Filter>mico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\MICO\EasyLink\EasyLink.c">
+      <Filter>mico\easylink</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Platform\Common\IAR\stdio_IAR.c">
+      <Filter>platform\common\iar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Library\support\AESUtils.c">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Library\support\HTTPUtils.c">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Library\support\MDNSUtils.c">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Library\support\RingBufferUtils.c">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Library\support\SecurityUtils.c">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Library\support\SHAUtils.c">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Library\support\SocketUtils.c">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Library\support\StringUtils.c">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Library\support\TimeUtils.c">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Library\support\TLVUtils.c">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MICO\Library\support\URLUtils.c">
+      <Filter>support</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\MICO\Demos\COM.MXCHIP.SPP\MICOAppDefine.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MICO\Demos\COM.MXCHIP.SPP\SppProtocol.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MICO\include\MicoDrivers\MicoDriverUart.h">
+      <Filter>include\micodriver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MICO\include\MICO.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MICO\include\MicoAES.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MICO\include\MicoAlgorithm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MICO\include\MicoPlatform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MICO\include\MICORTOS.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MICO\include\MicoSocket.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MICO\include\MicoSRPServer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MICO\include\MicoWlan.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
