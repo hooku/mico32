@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\LocalTcpServer.c" />
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\MICOAppEntrance.c" />
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\MICOBonjour.c" />
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\MICOConfigDelegate.c" />
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\RemoteTcpClient.c" />
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\SppProtocol.c" />
+    <ClCompile Include="..\MICO\Demos\COM.MXCHIP.SPP\UartRecv.c" />
+    <ClCompile Include="..\MICO\External\Curve25519\curve25519-donna.c" />
+    <ClCompile Include="..\MICO\External\JSON-C\arraylist.c" />
+    <ClCompile Include="..\MICO\External\JSON-C\debug.c" />
+    <ClCompile Include="..\MICO\External\JSON-C\json_object.c" />
+    <ClCompile Include="..\MICO\External\JSON-C\json_tokener.c" />
+    <ClCompile Include="..\MICO\External\JSON-C\json_util.c" />
+    <ClCompile Include="..\MICO\External\JSON-C\linkhash.c" />
+    <ClCompile Include="..\MICO\External\JSON-C\printbuf.c" />
+    <ClCompile Include="..\MICO\Library\MICOConfig.c" />
+    <ClCompile Include="..\MICO\Library\support\AESUtils.c" />
+    <ClCompile Include="..\MICO\Library\support\HTTPUtils.c" />
+    <ClCompile Include="..\MICO\Library\support\MDNSUtils.c" />
+    <ClCompile Include="..\MICO\Library\support\RingBufferUtils.c" />
+    <ClCompile Include="..\MICO\Library\support\SecurityUtils.c" />
+    <ClCompile Include="..\MICO\Library\support\SHAUtils.c" />
+    <ClCompile Include="..\MICO\Library\support\SocketUtils.c" />
+    <ClCompile Include="..\MICO\Library\support\StringUtils.c" />
+    <ClCompile Include="..\MICO\Library\support\TimeUtils.c" />
+    <ClCompile Include="..\MICO\Library\support\TLVUtils.c" />
+    <ClCompile Include="..\MICO\Library\support\URLUtils.c" />
+    <ClCompile Include="..\MICO\MICO\EasyLink\EasyLink.c" />
+    <ClCompile Include="..\MICO\MICO\MICOConfigMenu.c" />
+    <ClCompile Include="..\MICO\MICO\MICOConfigServer.c" />
+    <ClCompile Include="..\MICO\MICO\MICOEntrance.c" />
+    <ClCompile Include="..\MICO\MICO\MICONotificationCenter.c" />
+    <ClCompile Include="..\MICO\MICO\MICONTPClient.c" />
+    <ClCompile Include="..\MICO\MICO\MICOParaStorage.c" />
+    <ClCompile Include="..\MICO\MICO\MICOSystemMonitor.c" />
+    <ClCompile Include="..\MICO\Platform\Common\IAR\stdio_IAR.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\MICO\Demos\COM.MXCHIP.SPP\MICOAppDefine.h" />
+    <ClInclude Include="..\MICO\Demos\COM.MXCHIP.SPP\SppProtocol.h" />
+    <ClInclude Include="..\MICO\include\MICO.h" />
+    <ClInclude Include="..\MICO\include\MicoAES.h" />
+    <ClInclude Include="..\MICO\include\MicoAlgorithm.h" />
+    <ClInclude Include="..\MICO\include\MicoDrivers\MicoDriverUart.h" />
+    <ClInclude Include="..\MICO\include\MicoPlatform.h" />
+    <ClInclude Include="..\MICO\include\MICORTOS.h" />
+    <ClInclude Include="..\MICO\include\MicoSocket.h" />
+    <ClInclude Include="..\MICO\include\MicoSRPServer.h" />
+    <ClInclude Include="..\MICO\include\MicoWlan.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B1D2D3F1-B3A5-4C6B-B97B-6060DDFD4C4C}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>C:\ti\CC3200SDK_1.0.0\cc3200-sdk;C:\ti\CC3200SDK_1.0.0\cc3200-sdk\inc;$(ProjectDir)..;$(ProjectDir)..\MICO\include;$(ProjectDir)..\MICO\Bootloader;$(ProjectDir)..\MICO\External;$(ProjectDir)..\MICO\Library\support;$(ProjectDir)..\MICO\MICO;$(ProjectDir)..\MICO\Demos\COM.MXCHIP.SPP;$(ProjectDir)..\MICO\Platform\Common\Cortex-M4</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

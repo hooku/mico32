@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lwip">
+      <UniqueIdentifier>{86091923-0a11-430b-933b-b0ccb2ea84fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="FreeRTOS">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{3e59cffe-dabe-4b7a-a0d5-b7836ca1c046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="easylink library">
+      <UniqueIdentifier>{c1dbcd19-d0b7-4d48-9dcc-cf081f95288d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cc32xx_platform.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\platform.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\platform_common_config.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mico32_common.h" />
+    <ClInclude Include="..\mico32_handler.h" />
+    <ClInclude Include="..\pinmux.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\FreeRTOSConfig.h">
+      <Filter>FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mico32_easylink.h">
+      <Filter>easylink library</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\mico32_hal.c" />
+    <ClCompile Include="..\mico32_handler.c" />
+    <ClCompile Include="..\mico32_misc.c" />
+    <ClCompile Include="..\mico32_osal.c" />
+    <ClCompile Include="..\mico32_sock.c" />
+    <ClCompile Include="..\mico32_wlan.c" />
+    <ClCompile Include="..\pinmux.c" />
+    <ClCompile Include="..\platform.c">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\croutine.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\event_groups.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\list.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\queue.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\tasks.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\ti\CC3200SDK_1.0.0\cc3200-sdk\third_party\FreeRTOS\source\timers.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lwip\src\core\def.c">
+      <Filter>lwip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lwip\src\core\ipv4\ip_addr.c">
+      <Filter>lwip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mico32_entry.c" />
+    <ClCompile Include="..\mico32_easylink_plus.c">
+      <Filter>easylink library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mico32_easylink_3.c">
+      <Filter>easylink library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mico32_easylink_2.c">
+      <Filter>easylink library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mico32_easylink_lib.c" />
+    <ClCompile Include="C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\common\startup_ewarm.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\common\timer_if.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\common\uart_if.c">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
